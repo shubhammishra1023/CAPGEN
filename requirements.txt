@@ -1,0 +1,8 @@
+streamlit
+tensorflow
+numpy
+pillow
+transformers
+torch
+textblob
+translate
