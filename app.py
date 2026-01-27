@@ -500,7 +500,7 @@ st.set_page_config(
 
 # --- CONFIGURATION ---
 # ⚠️ REPLACE WITH YOUR REAL KEY
-API_KEY = "AIzaSyA57conYqxB1ZoKk4p4xaIv5OPZONNWDuw"
+API_KEY = "AIzaSyDLfkPMnZ47o8tSKtYOoFILDjbj0rxGpzk"
 
 # --- CUSTOM CSS (Styling Headers & Footer) ---
 st.markdown("""
@@ -587,9 +587,9 @@ if selected == "Home":
         
         if generate_btn and uploaded_file:
             # API Key Check
-            # if "AIza" not in API_KEY:
-            #     st.error("⚠️ Please enter a valid API Key in the code.")
-            #     st.stop()
+            if "AIza" not in API_KEY:
+                st.error("⚠️ Please enter a valid API Key in the code.")
+                st.stop()
                 
             with st.spinner('🎨 analyzing colors, mood, and details...'):
                 try:
