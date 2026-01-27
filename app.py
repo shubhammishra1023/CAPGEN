@@ -554,7 +554,7 @@ selected = option_menu(
     styles={
         "container": {"padding": "0!important", "background-color": "#262730"},
         "icon": {"color": "orange", "font-size": "18px"}, 
-        "nav-link": {"font-size": "16px", "text-align": "center", "margin":"0px", "--hover-color": "#333"},
+        "nav-link": {"font-size": "16px", "text-align": "center", "margin":"0px", "color": "white", "--hover-color": "#333"},
         "nav-link-selected": {"background-color": "#FF4B4B"},
     }
 )
@@ -587,9 +587,9 @@ if selected == "Home":
         
         if generate_btn and uploaded_file:
             # API Key Check
-            if "AIza" not in API_KEY:
-                st.error("⚠️ Please enter a valid API Key in the code.")
-                st.stop()
+            # if "AIza" not in API_KEY:
+            #     st.error("⚠️ Please enter a valid API Key in the code.")
+            #     st.stop()
                 
             with st.spinner('🎨 analyzing colors, mood, and details...'):
                 try:
@@ -681,6 +681,6 @@ if selected == "Contact":
 # --- 5. FOOTER (Sticky Bottom) ---
 st.markdown("""
     <div class="footer">
-        <p>Made with ❤️ by [Your Name] | Project D-15 Research Group | © 2024 CAPZEN AI</p>
+        <p>Made with ❤️ by Team D-15 | Project Research Group | © 2024 CAPZEN AI</p>
     </div>
 """, unsafe_allow_html=True)
