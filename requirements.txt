@@ -6,3 +6,5 @@ transformers
 torch
 textblob
 translate
+google-generativeai
+streamlit-option-menu
